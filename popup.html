@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IA Chat Extension</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>IA Chat</h1>
+    <div id="chat-container">
+        <label for="model-select">Modèle:</label>
+        <select id="model-select">
+        </select><br><br>
+        <div id="messages"></div>
+        <textarea id="message-input" placeholder="Votre message"></textarea>
+        <div id="prompt-buttons">
+            <button data-prompt="Résume ceci">Résume</button>
+            <button data-prompt="Traduis en anglais">Traduis</button>
+            <button data-prompt="Explique comme si j'avais 5 ans">Explique (5 ans)</button>
+        </div>
+        <button id="send-button">Envoyer</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

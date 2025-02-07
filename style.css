@@ -1,0 +1,58 @@
+/* style.css */
+#chat-container {
+    width: 380px;
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#messages {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.message {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.message strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#message-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important pour éviter que le padding ne casse la largeur */
+}
+
+#prompt-buttons {
+    margin-bottom: 10px;
+}
+
+#prompt-buttons button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#send-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #3e8e41;
+}

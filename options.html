@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Options</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Options de l'extension IA Chat</h1>
+
+    <label for="ia-service">Service IA:</label>
+    <select id="ia-service">
+        <option value="mistral">Mistral</option>
+        <option value="google">Google</option>
+    </select><br><br>
+
+    <div id="api-keys-container">
+        <div id="mistral-api-key-container">
+            <label for="mistral-api-key">Clé API Mistral:</label>
+            <input type="text" id="mistral-api-key"><br><br>
+        </div>
+
+        <div id="google-api-key-container">
+            <label for="google-api-key">Clé API Google:</label>
+            <input type="text" id="google-api-key"><br><br>
+        </div>
+    </div>
+
+    <label for="model">Modèle:</label>
+    <select id="model">
+    </select><br><br>
+
+    <button id="save">Enregistrer</button>
+    <script src="options.js"></script>
+</body>
+</html>
